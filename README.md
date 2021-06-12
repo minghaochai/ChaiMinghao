@@ -12,4 +12,4 @@ The Unit Test project is named 'Tech Assessment Feature Switches.Tests' and uses
 
 The Web API and Unit Test project makes use of Entity Framework Core (https://docs.microsoft.com/en-us/ef/core/) as the InMemory database provider.
 
-Upon running the solution (either locally or on the web), navigate to the '/swagger' (e.g. localhost:5001/swagger) to view the endpoints made available.
+Upon running the solution (either locally or on the web), navigate to the '/swagger' (e.g. localhost:5001/swagger) to view and test the endpoints made available.
