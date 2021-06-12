@@ -35,11 +35,19 @@ namespace Tech_Assessment_Feature_Switches.Controllers
         /// Returns whether a feature is enabled for a user. 
         /// </summary>
         /// <remarks>
+        /// Attempt to retrieve the user and feature name mapping record from the database.
+        /// 
+        /// If mapping record exists, return whether the user has access to the feature.
+        /// 
+        /// If mapping record does not exists, return message indicating that user to feature mapping does not exist within the database.
+        /// 
         /// Sample request:
         ///
         ///     GET /feature??email=testUser2&amp;featureName=Export
         ///
         /// </remarks>
+        /// <response code="200">Returns the users access right to the feature.</response>
+        /// <response code="400">Invalid request. Read message returned for more details.</response>
         [HttpGet("feature")]
         public async Task<ActionResult<FeatureAccess>> GetFeatureAccess([FromQuery(Name = "email")]string email, [FromQuery(Name = "featureName")]string featureName)
         {
@@ -88,6 +96,14 @@ namespace Tech_Assessment_Feature_Switches.Controllers
         /// Manages a users access to features. 
         /// </summary>
         /// <remarks>
+        /// Attempt to update the 'Enable' property for a user to feature mapping.
+        /// 
+        /// If mapping record exists and the 'Enable' paramameter from the POST body does not match with the database record, update the database record 'Enable' column to the incoming 'Enable' parameter and return status code 200.
+        /// 
+        /// If mapping record exists and the 'Enable' paramameter from the POST body matches with the database record, return status code 304 (Not Modified).
+        /// 
+        /// If mapping record does not exist, return status code 304 (Not Modified).
+        /// 
         /// Sample request:
         ///
         ///     POST /feature
@@ -98,6 +114,8 @@ namespace Tech_Assessment_Feature_Switches.Controllers
         ///     }
         ///
         /// </remarks>
+        /// <response code="200">Successfully updated</response>
+        /// <response code="304">Not Modified</response>
         [HttpPost("feature")]
         public async Task<ActionResult<FeatureAccess>> UpdateUserFeatureAccess([FromBody]FeatureAccess request)
         {
