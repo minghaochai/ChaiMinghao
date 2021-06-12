@@ -1,10 +1,5 @@
-using System;
-using Moq;
 using Xunit;
 using Tech_Assessment_Feature_Switches.Controllers;
-using System.Linq;
-using System.Collections.Generic;
-using System.Net.Http;
 using Tech_Assessment_Feature_Switches.Models;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
