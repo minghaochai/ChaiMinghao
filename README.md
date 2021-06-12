@@ -2,7 +2,7 @@
 Solution to the technical assessment given by MoneyLion for the position of Senior Software Engineer (Backend).
 
 ## Solution details
-This solution runs on the .NET 5.0 framework. 
+This solution runs on the .NET 5.0 framework. Heres the link to the SDK which is required to run the solution - https://dotnet.microsoft.com/download 
 
 The technical assessment solution can be found within the 'Tech Assessment Feature Switches/Controllers' directory where the file is named 'FeatureAccessController.cs'.
 
