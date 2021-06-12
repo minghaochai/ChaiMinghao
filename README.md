@@ -6,7 +6,7 @@ This solution runs on the .NET 5.0 framework.
 
 The technical assessment solution can be found within the 'Tech Assessment Feature Switches/Controllers' directory where the file is named 'FeatureAccessController.cs'.
 
-The Web API project is named 'Tech Assessment Feature Switches'. 
+The Web API project is named 'Tech Assessment Feature Switches' where the technical assessment solution method names are 'GetFeatureAccess' (GET) and 'UpdateUserFeatureAccess' (POST). 
 
 The Unit Test project is named 'Tech Assessment Feature Switches.Tests' and uses the xUnit testing tool (https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test).
 
