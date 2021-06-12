@@ -4,7 +4,7 @@ Solution to the technical assessment given by MoneyLion for the position of Seni
 ## Solution details
 This solution runs on the .NET 5.0 framework. Heres the link to the SDK which is required to run the solution - https://dotnet.microsoft.com/download 
 
-The technical assessment solution can be found within the 'Tech Assessment Feature Switches/Controllers' directory where the file is named 'FeatureAccessController.cs'.
+**The technical assessment solution can be found within the 'Tech Assessment Feature Switches/Controllers' directory where the file is named 'FeatureAccessController.cs'.**
 
 The Web API project is named 'Tech Assessment Feature Switches' where the technical assessment solution method names are 'GetFeatureAccess' (GET) and 'UpdateUserFeatureAccess' (POST). 
 
